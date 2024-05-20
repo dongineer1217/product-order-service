@@ -5,6 +5,7 @@ import com.example.productorderservice.product.application.service.ProductServic
 import com.example.productorderservice.product.application.service.UpdateProductRequest;
 import com.example.productorderservice.product.domain.DiscountPolicy;
 import com.example.productorderservice.product.domain.Product;
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -38,8 +39,6 @@ public class ProductServiceTest {
 
         assertThat(product.getName()).isEqualTo("상품 수정");
         assertThat(product.getPrice()).isEqualTo(2000);
-
     }
-
 
 }
